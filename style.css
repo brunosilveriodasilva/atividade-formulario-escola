@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right bottom, #fff 10%, rgb(164, 219, 255));
+}
+
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em;
+    color: white;
+    background: rgb(17, 17, 17);
+    border-bottom: 2px solid gray;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    user-select: none;
+}
+
+.hero-h1 {
+    font-size: 2.5em;
+}
+
+main {
+    margin: 2em;
+}
+
+form {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid rgb(196, 196, 196);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.089);
+}
+
+.preset-input {
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    border-radius: .2em;
+    padding: .5em;
+}
+
+.preset-input:hover {
+    border: 1px solid rgba(0, 0, 0, 0.815);
+    transition: ease .2s;
+}
+
+label {
+    user-select: none;
+}
+
+.preset-input:focus {
+    border: 1px solid rgb(0, 0, 92);
+}
+
+/* --------------------------------------------------------------------------
+   2. CAIXA CONTAINER DO FORMULÁRIO (.formulario-box)
+   -------------------------------------------------------------------------- */
+.formulario-box {
+    /* COR DE FUNDO DA CAIXA: #ffffff (Branco) | #1e293b (Escuro)
+
+       ⚠️ Essa escolha afeta a legibilidade dos itens 3 (.rotulo) e
+       (.subtitulo-secao) logo abaixo. Guarde qual cor escolheu aqui!
+    */
+    background-color: ___;
+
+    /* LARGURA MÁXIMA DA CAIXA: 400px | 500px | 600px */
+    max-width: ___;
+
+    margin: 0 auto;
+    padding: 25px;
+
+    /* ARREDONDAMENTO DAS BORDAS: 0px (quadrado) | 8px (suave) | 16px (arredondado) */
+    border-radius: ___;
+
+    /* SOMBRA DA CAIXA: 0 4px 10px rgba(0, 0, 0, 0.1) | none (sem sombra) */
+    box-shadow: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. ESTILIZANDO POR CLASS (.titulo-principal, .subtitulo-secao e .rotulo)
+   -------------------------------------------------------------------------- */
+.titulo-principal {
+    color: ___;
+    border-bottom: ___;
+
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.subtitulo-secao {
+    color: ___;
+
+    font-size: ___;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.rotulo {
+    font-weight: ___;
+
+    /* COR DO TEXTO: #1e293b (Escuro) | #ffffff (Branco para modo dark)
+
+       ⚠️ DICA DE CONTRASTE: escolha essa cor de acordo com o
+       'background-color' da .formulario-box (item 2 acima). Se a caixa
+       for #ffffff (Branco), use #1e293b aqui. Se a caixa for #1e293b
+       (Escuro), use #ffffff aqui. Combinar as duas cores claras (ou as
+       duas escuras) deixa o texto praticamente invisível.
+    */
+    color: ___;
+
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+/* --------------------------------------------------------------------------
+   4. ESTILIZANDO POR ID (#campo-nome e #campo-matricula)
+   -------------------------------------------------------------------------- */
+#campo-nome {
+    /* DESTAQUE DO CAMPO NOME [Largura] [Estilo] [Cor]:
+       - Exemplo: 2px solid #2563eb | 2px solid #7c3aed
+    */
+    border: ___;
+}
+
+#campo-matricula {
+    /* COR DE FUNDO DO CAMPO BLOQUEADO: #e2e8f0 (Cinza claro) | #cbd5e1 */
+    background-color: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   5. CAMPOS DE ENTRADA (input[type="text"], input[type="email"], input[type="password"])
+   -------------------------------------------------------------------------- */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    /* LARGURA DO CAMPO: 100% | 280px | 350px */
+    width: ___;
+
+    /* ESPAÇAMENTO INTERNO: 8px | 12px | 15px */
+    padding: ___;
+
+    /* BORDA PADRÃO: 1px solid #cbd5e1 | 2px solid #94a3b8 */
+    border: ___;
+
+    /* CANTOS ARREDONDADOS: 0px | 6px | 12px */
+    border-radius: ___;
+
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------------------------------------------
+   6. ESTILIZANDO O PLACEHOLDER (input::placeholder)
+   -------------------------------------------------------------------------- */
+input::placeholder {
+    /* COR DO TEXTO DE DICA: #94a3b8 (Cinza) | #a855f7 (Roxo) | #38bdf8 (Azul) */
+    color: ___;
+
+    /* ESTILO DA FONTE: italic (itálico) | normal */
+    font-style: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   7. ATRIBUTOS BOOLEANOS (required e disabled)
+   -------------------------------------------------------------------------- */
+
+/* ATRIBUTO BOOLEANO [required] - CAMPO OBRIGATÓRIO */
+input[required] {
+    /* Borda esquerda de destaque:
+       - 4px solid #ef4444 (Vermelho) | 4px solid #f97316 (Laranja)
+    */
+    border-left: ___;
+}
+
+/* ATRIBUTO BOOLEANO [disabled] - CAMPO BLOQUEADO */
+input[disabled] {
+    /* CURSOR DO MOUSE: not-allowed (proibido) | default (padrão) */
+    cursor: ___;
+
+    /* OPACIDADE/TRANSPARÊNCIA: 0.8 | 0.5 (médio) | 0.2 (muito transparente) */
+    opacity: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   8. BOTÕES (.btn-enviar e .btn-limpar)
+   -------------------------------------------------------------------------- */
+.grupo-botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 20px;
+
+    /* REMOVER BORDA PADRÃO: none */
+    border: ___;
+
+    /* ARREDONDAMENTO DO BOTÃO: 6px (suave) | 25px (pílula) */
+    border-radius: ___;
+
+    font-weight: bold;
+
+    /* CURSOR DO MOUSE: pointer (mãozinha) */
+    cursor: ___;
+}
+
+.btns {
+    border-radius: 5px;
+    background-color: rgb(0, 0, 92);
+    border: 2px solid rgb(192, 192, 192);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    color: white;
+    padding: 15px;
+    transition: ease-in-out .1s;
+}
+
+.btns:hover {
+    transform: scale(1.050);
+    background: rgb(0, 0, 46);
+}
+
+.btn-enviar {
+    color: ___;
+}
+
+.btn-limpar {
+    background-color: red;
+    color: ___;
+}
